@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
+/**
+ * Displays list of poll options
+ */
 const PollView = (props) => (
   <Fragment>
     <ul className="poll-options">

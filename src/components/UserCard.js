@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * Displays users stats with total rank
+ */
 const UserCard = (props) => (
   <div className="user-card poll">
     <img className="poll-user-avatar" src={props.user.avatarURL} alt=""></img>

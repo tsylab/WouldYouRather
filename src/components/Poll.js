@@ -5,6 +5,14 @@ import PollView from './PollView'
 import PollVote from './PollVote'
 import PollResult from './PollResult'
 
+/**
+ * Poll card. Contains author name, author avatar and question info.
+ * Depends on pollMode, question info could be shown in three different ways
+ * view - mode for display poll in list on home page
+ * vote - mode for submit answer
+ * results - mode for display vote results
+ * Connected to Redux store
+ */
 class Poll extends Component {
   render() {
     const { user, question, author, pollMode} = this.props;
@@ -34,7 +42,8 @@ function mapStateToProps ({ auth, users, questions }, { id, match }) {
   const user = users[auth];
   const questionId = id ? id : match.params.id;
   const question = questionId && questions[questionId] ? questions[questionId] : null;
-  let pollMode = 'view';
+  let pollMode = 'view';  // default mode
+  // if there is a URL parameter, than show as vote details with form for option selection or with vote results
   if (question && match.params.id && user) {
     if (user.answers[questionId]) {
       pollMode = 'results';

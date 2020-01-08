@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+/**
+ * Input wrapper with optional title and optional total text length limit
+ */
 class RestrictedInput extends Component {
   state = {
     text: ''

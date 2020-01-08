@@ -6,7 +6,6 @@ import UserCard from './UserCard'
  * Leaderboard is a list of users, in order of amount of asked questions and answered questions combined
  * Connected to Redux store
  */
-
 class LeaderBoard extends Component {
   render() {
     const { auth, users } = this.props;

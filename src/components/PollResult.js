@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * Displays poll results with vote count and percentage for each option
+ */
 const PollResult = (props) => {
   const { question, user } = props;
   const selected = user.answers[question.id];

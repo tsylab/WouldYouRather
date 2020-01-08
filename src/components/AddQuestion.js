@@ -8,7 +8,6 @@ import { handleAddQuestion } from '../actions/questions'
  * Component represented from for creating new questions
  * Connected to Redux store
  */
-
 class AddQuestion extends Component {
   state = {
     optionOne: '',

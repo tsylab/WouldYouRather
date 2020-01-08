@@ -7,7 +7,6 @@ import { logoutUser } from '../actions/auth'
  * Main navigation in app. Always visible. Represents major pages links, info about authorized user and login/logout button
  * Connected to Redux store
  */
-
 class NavBar extends Component {
   linkClassName(link, path) {
     return 'btn nav-btn' + (link === path ? ' btn-bordered' : '');

@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { handleQuestionAnswer } from '../actions/questions'
 
+/**
+ * Displays form for poll voting with two options
+ */
 class PollVote extends Component {
   state = {
     answer: 'optionOne'

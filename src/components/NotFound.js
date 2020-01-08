@@ -3,7 +3,6 @@ import React from 'react'
 /**
  * Handle 404 error
  */
-
 const NotFound = () => {
   return (
     <div className="not-found">

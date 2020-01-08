@@ -7,7 +7,6 @@ import { loginUser } from '../actions/auth'
  * Component for authorize. After submit, redirects to previous page (if it set in location) or to home page
  * Connected to Redux store
  */
-
 class Login extends Component {
   state = {
     selectedUser: this.props.auth ? this.props.auth : (this.props.userList && this.props.userList.length ? this.props.userList[0].id : 0)
